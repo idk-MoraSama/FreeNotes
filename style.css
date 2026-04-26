@@ -1,0 +1,149 @@
+body{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" -2,
+        "wdth" 87.5,
+        "GRAD" 150,
+        "XOPQ" 117,
+        "XTRA" 376,
+        "YOPQ" 79,
+        "YTAS" 750,
+        "YTDE" -203,
+        "YTFI" 738,
+        "YTLC" 514,
+        "YTUC" 760;
+    background-color: rgb(14, 12, 12);
+    color: white;
+}
+
+.Main{
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    align-items: center;
+
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.Header{
+    height: 50px;
+    max-width: 500px;
+    display: grid;
+    background-color: #234d4d;
+
+    font-family: "Aldrich", sans-serif;
+    font-size: 70px;
+    color: white;
+    
+    padding: 1em 1em;
+    border-radius: 0.5em;
+
+    place-content: center;
+}
+
+#input_box{
+    padding: 0em 1em;
+    background-color: #2c2929;
+    color: white;
+    width: 30em;
+    height: 35px;
+    border-radius: 1em;
+    border: none;
+}
+
+#input_box:focus{
+    outline: 2px solid lightgray;
+}
+
+.button{
+    background-color: white;
+    width: auto;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+
+    padding: 0px 20px;
+
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.button:hover{
+    background-color: lightgray;
+}
+
+.button:active{
+    background-color: gray;
+}
+
+.buttons_menu{
+    width: 500px;
+    border: none;
+    display: flex;
+    justify-content: end;
+
+    gap: 5px;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.DropDownButton {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    color: lightgray;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    transition: color 0.1s ease;
+}
+
+.DropDownButton:hover{
+    background-color: #111;
+    color: white;
+}
+
+#DropDownMenu {
+    position: absolute;
+    display: none;
+    border: none;
+    padding: 3px;
+    flex-direction: column;
+    background: #222;
+    z-index: 1000;
+}
+
+.Element{
+    font-family: "Delius", cursive;
+    font-size: 20px;
+
+    white-space: pre-wrap;
+    display: grid;
+    width: 500px;
+    min-height: 50px;
+    height: auto;
+    grid-template-columns: 1fr 50px;
+    background-color: #182916;
+
+    word-break: break-all;
+    place-items: center;
+    text-align: center;
+    padding: 8px;
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+    transition: background-color 0.1s ease;
+}
+
+.Element:hover{
+    background-color: #122010;
+}
